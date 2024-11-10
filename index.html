@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="sidebar">
+    <div id="sidebar-filler-1">
+    </div>
+    <div id="logo">
+      <img id=logo-image src="odin-lined.png" alt="Odin logo" height="85%">
+      <p id="logo-text">ODIN</p>
+    </div>
+    <div id="sidebar-filler-2">
+    </div>
+    <div id="footer">
+      <p id="footer-text">photo by <a href="https://unsplash.com/@haliewestphoto">Halle West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+    </div>
+  </div>
+  <form id=form action="" method="post">
+    <div id="instructions">
+      <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+      Sign up <em>now</em> to get started.<br><br>
+      You <em>know</em> you want to.
+      </h2>
+    </div>
+    <div id="form-fields">
+      <div id="legend">
+        <legend>Let's do this!</legend>
+      </div>
+      <div id="form-divs">
+        <div class="form-div">
+        <label for="first_name">FIRST NAME</label>
+        <input type="text" id="first_name">
+        </div>
+        <div class="form-div">
+          <label for="last_name">LAST NAME</label>
+          <input type="text" id="last_name">
+        </div>
+        <div class="form-div">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email">
+        </div>
+        <div class="form-div">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="tel" id="phone-number">
+        </div>
+        <div class="form-div">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" required minlength="8" 
+                 pattern=".{8,}" title="Passwords do not match.">
+          <p class="error-message">*Passwords do not match!</p>
+        </div>
+        <div class="form-div">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" id="confirm-password" required minlength="8" 
+                 pattern=".{8,}" title="Passwords do not match.">
+          <p class="error-message">*Passwords do not match!</p>
+        </div>
+      </div>
+    </div>
+    <div id="submit">
+      <button>Create Account</button>
+      <h3>Already have an account? Log in</h3>
+    </div>
+  </form>
+</body>
+</html>
